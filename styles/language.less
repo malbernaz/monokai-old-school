@@ -1,0 +1,324 @@
+
+// Language syntax highlighting
+
+.comment {
+  color: @gray;
+}
+
+.entity {
+
+  &.name.type {
+    color: @yellow;
+  }
+
+  &.other.inherited-class {
+    color: @green;
+  }
+}
+
+.keyword {
+  color: @red;
+
+  &.control {
+    color: @red;
+  }
+
+  &.operator {
+    color: @red;
+  }
+
+  &.other.special-method {
+    color: @blue;
+  }
+
+  &.other.unit {
+    color: @purple;
+  }
+}
+
+.storage {
+  color: @cyan;
+  font-style: italic;
+
+  &.modifier {
+    color: @red;
+    font-style: normal;
+  }
+}
+
+.constant {
+  color: @orange;
+
+  &.character.escape {
+    color: @cyan;
+  }
+
+  &.numeric {
+    color: @purple;
+  }
+
+  &.other.color {
+    color: @cyan;
+  }
+
+  &.other.symbol {
+    color: @green;
+  }
+
+  &.language {
+    &.null,
+    &.undefined,
+    &.boolean,  {
+      color: @purple;
+    }
+  }
+
+  &.property-value {
+    color: @cyan;
+  }
+}
+
+.variable {
+  color: @white;
+
+  &.interpolation {
+    color: @white;
+  }
+
+  &.constant, &.shorthandpropertyname {
+    color: @purple;
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color;
+  }
+
+  &.language.this {
+    color: @orange;
+    font-style: italic;
+  }
+}
+
+.invalid.illegal {
+  background-color: @red;
+  color: @syntax-background-color;
+}
+
+.string {
+  &.quoted {
+    color: @yellow;
+  }
+  &.unquoted {
+    color: @purple;
+  }
+
+  &.regexp {
+    color: @cyan;
+
+    .source.ruby.embedded {
+      color: @yellow;
+    }
+  }
+
+  &.other.link {
+    color: @red;
+  }
+}
+
+.punctuation {
+  &.definition {
+    &.parameters,
+    &.array {
+      color: @white;
+    }
+
+    &.entity {
+      color: @green;
+    }
+
+    &.heading,
+    &.identity {
+      color: @blue;
+      font-size: 16px;
+    }
+
+    &.bold {
+      color: @yellow;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @purple;
+      font-style: italic;
+    }
+  }
+
+  &.section.embedded {
+    color: @white;
+  }
+
+  &.separator {
+    color: @white;
+  }
+}
+
+.support {
+  &.class {
+    color: @blue;
+    font-style: italic;
+
+    &.component {
+      color: @cyan;
+      text-decoration: underline;
+      font-style: normal;
+    }
+  }
+
+  &.type {
+    color: @blue;
+    font-style: italic;
+
+    &.property-name {
+      color: @cyan;
+    }
+  }
+
+  &.function  {
+    color: @cyan;
+    font-style: italic;
+
+    &.any-method {
+      color: @blue;
+    }
+  }
+}
+
+.entity {
+
+  &.name.function {
+    color: @green;
+    text-decoration: underline;
+  }
+
+  &.name.class {
+    color: @green;
+    text-decoration: underline;
+  }
+
+  &.name.type.class {
+    color: @green;
+    text-decoration: underline;
+  }
+
+  &.name.section {
+    color: @blue;
+  }
+
+  &.name.tag {
+    color: @red;
+    text-decoration: underline;
+  }
+
+  &.other.attribute-name {
+    color: @green;
+
+    &.id {
+      color: @blue;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @yellow;
+  }
+
+  &.delimiter {
+    color: @white;
+  }
+
+  &.link {
+    color: @orange;
+  }
+
+  &.require {
+    color: @blue;
+  }
+
+  &.selector {
+    color: @purple;
+  }
+
+  &.brace {
+    color: @white;
+  }
+
+  &.separator {
+    background-color: #373b41;
+    color: @syntax-text-color;
+  }
+
+  &.tag {
+    color: @syntax-text-color;
+  }
+}
+
+.none {
+  color: @syntax-text-color;
+}
+
+.markup {
+  &.bold {
+    color: @orange;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @purple;
+  }
+
+  &.deleted {
+    color: @red;
+  }
+
+  &.italic {
+    color: @purple;
+    font-style: italic;
+  }
+
+  &.heading {
+    color: @red;
+
+    .punctuation.definition.heading {
+      color: @blue;
+    }
+  }
+
+  &.link {
+    // color: @blue;
+    text-decoration: underline;
+    font-style: italic;
+  }
+
+  &.inserted {
+    color: @green;
+  }
+
+  &.quote {
+    color: @orange;
+  }
+
+  &.raw {
+    color: @green;
+  }
+}
+
+.source.gfm {
+  .markup {
+    -webkit-font-smoothing: auto;
+  }
+
+  .link .entity {
+    color: @cyan;
+  }
+}
