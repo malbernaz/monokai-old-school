@@ -1,6 +1,6 @@
 # Monokai Old School
 
-Atom theme heavly inspired from old school monokai themes such as sublime's and vs code's.
+Atom theme heavly inspired by old school monokai themes such as sublime's and vs code's.
 
 If you find any bug, feel free to fire an issue or send a pull request.
 
