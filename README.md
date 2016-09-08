@@ -4,6 +4,8 @@ Atom theme heavly inspired by old school monokai themes such as sublime's and vs
 
 If you find any bug, feel free to fire an issue or send a pull request.
 
+The awesome font featured in the screenshot down below is [Fira Code](https://github.com/tonsky/FiraCode).
+
 ![Monokai Old School](https://raw.githubusercontent.com/malbernaz/monokai-old-school/master/screenshot.jpg)
 
 ## Install
