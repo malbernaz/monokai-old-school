@@ -3,6 +3,7 @@
 
 .comment {
   color: @gray;
+  font-style: italic;
 }
 
 .entity {
@@ -38,7 +39,6 @@
 
 .storage {
   color: @cyan;
-  font-style: italic;
 
   &.modifier {
     color: @red;
@@ -63,6 +63,10 @@
 
   &.other.symbol {
     color: @green;
+  }
+
+  &.other.caps {
+    color: @purple;
   }
 
   &.language {
@@ -95,7 +99,6 @@
 
   &.language.this {
     color: @orange;
-    font-style: italic;
   }
 }
 
@@ -125,6 +128,8 @@
 }
 
 .punctuation {
+  color: @white;
+
   &.definition {
     &.parameters,
     &.array {
@@ -141,6 +146,8 @@
       font-size: 16px;
     }
 
+    &.string,
+    &.quasi,
     &.bold {
       color: @yellow;
       font-weight: bold;
@@ -150,21 +157,22 @@
       color: @purple;
       font-style: italic;
     }
+
+    &.comment {
+      color: @gray;
+      font-style: italic;
+    }
   }
 
-  &.section.embedded {
-    color: @white;
-  }
-
-  &.separator {
-    color: @white;
+  &.quasi {
+    color: @yellow;
+    font-weight: bold;
   }
 }
 
 .support {
   &.class {
     color: @blue;
-    font-style: italic;
 
     &.component {
       color: @cyan;
@@ -175,7 +183,6 @@
 
   &.type {
     color: @blue;
-    font-style: italic;
 
     &.property-name {
       color: @cyan;
@@ -184,7 +191,7 @@
 
   &.function  {
     color: @cyan;
-    font-style: italic;
+    text-decoration: underline;
 
     &.any-method {
       color: @blue;
@@ -220,10 +227,6 @@
 
   &.other.attribute-name {
     color: @green;
-
-    &.id {
-      color: @blue;
-    }
   }
 }
 
