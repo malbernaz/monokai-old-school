@@ -1,15 +1,28 @@
-.meta.selector.css {
-  color: @white;
-}
+.css, .scss, .less {
+  &.meta {
+    &.selector {
+      color: @white;
+    }
 
-.meta.at-rule.import.css {
-  color: @yellow;
-}
+    &.property-name {
+      color: @cyan;
+      font-style: italic;
+    }
 
-.support.type.property-name.css {
-  font-style: italic;
-}
+    &.at-rule.import {
+      color: @yellow;
+    }
+  }
 
-.support.constant.property-value.css {
-  color: @purple;
+  &.function {
+    color: @green;
+
+    &.punctuation {
+      color: @white;
+    }
+  }
+
+  &.constant {
+    color: @purple;
+  }
 }
