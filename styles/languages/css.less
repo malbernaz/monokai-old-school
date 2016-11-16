@@ -4,13 +4,27 @@
       color: @white;
     }
 
-    &.property-name {
+    &.property-name, &.support.type.property-name {
       color: @cyan;
-      font-style: italic;
     }
 
     &.at-rule.import {
       color: @yellow;
+    }
+  }
+
+  &.invalid.illegal {
+    color: inherit;
+    background: none;
+  }
+
+  &.support {
+    &.property-name {
+      color: @cyan;
+    }
+
+    &.type.property-name.unknown {
+      -webkit-filter: none !important;
     }
   }
 
