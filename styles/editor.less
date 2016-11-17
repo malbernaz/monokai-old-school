@@ -58,25 +58,3 @@ atom-text-editor, // <- remove when Shadow DOM can't be disabled
     border-color: @syntax-result-marker-color;
   }
 }
-
-.list-tree {
-  li:not(.list-nested-item) {
-    &.status-modified, &.selected.status-modified {
-      color: @orange;
-    }
-
-    &.status-added, &.selected.status-added  {
-      color: @green;
-    }
-  }
-
-  li.list-nested-item {
-    &.status-modified > .list-item, &.selected.status-modified > .list-item {
-      color: @orange;
-    }
-
-    &.status-added > .list-item, &.selected.status-added > .list-item {
-      color: @green;
-    }
-  }
-}
