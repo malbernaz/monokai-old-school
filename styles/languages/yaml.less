@@ -1,7 +1,13 @@
-.punctuation.separator.key-value.yaml {
-  color: @red;
-}
+.yaml {
+  &.punctuation.separator.key-value {
+    color: @red;
+  }
 
-.entity.name.tag.yaml {
-  text-decoration: none;
+  &.entity.name.tag {
+    text-decoration: none;
+  }
+
+  &.string {
+    color: @yellow;
+  }
 }
