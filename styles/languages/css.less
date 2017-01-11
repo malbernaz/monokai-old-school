@@ -1,50 +1,50 @@
-.css, .scss, .less {
-  &.meta {
-    &.selector {
+.syntax--css, .syntax--scss, .syntax--less {
+  &.syntax--meta {
+    &.syntax--selector {
       color: @white;
     }
 
-    &.property-name, &.support.type.property-name {
+    &.syntax--property-name, &.syntax--support.syntax--type.syntax--property-name {
       color: @cyan;
     }
 
-    &.at-rule.import {
+    &.syntax--at-rule.syntax--import {
       color: @yellow;
     }
   }
 
-  &.invalid.illegal {
+  &.syntax--invalid.syntax--illegal {
     color: inherit;
     background: none;
   }
 
-  &.support {
-    &.property-name {
+  &.syntax--support {
+    &.syntax--property-name {
       color: @cyan;
     }
 
-    &.type.property-name.unknown {
+    &.syntax--type.syntax--property-name.syntax--unknown {
       -webkit-filter: none !important;
     }
 
-    &.function {
+    &.syntax--function {
       color: @green;
     }
   }
 
-  &.keyword.operator {
+  &.syntax--keyword.syntax--operator {
     color: @white;
   }
 
-  &.function {
+  &.syntax--function {
     color: @green;
   }
 
-  &.punctuation {
+  &.syntax--punctuation {
     color: @white;
   }
 
-  &.constant {
+  &.syntax--constant {
     color: @purple;
   }
 }
